@@ -1,0 +1,81 @@
+body {
+    /* m */
+    margin: 10px;
+    /* p */
+    padding: 10px;
+    /* m10 */
+    margin: 10px;
+    /* p10 */
+    padding: 10px;
+    /* m10p */
+    margin: 10%;
+    /* m10-20-10-20 上右下左*/
+    margin: 10px 20px 30px 40px;
+    /* m10p-20 */
+    margin: 10% -20px;
+    /* mt10 */
+    margin-top: 10px;
+    /* ml20 */
+    margin-left: 20px;
+    /* mb20 */
+    margin-bottom: 20px;
+    /* mr10p */
+    margin-right: 10%;
+    /* m-10 */
+    margin: -10px;
+    /* m-20--20 */
+    margin: -20px -20px;
+}
+
+/* CSS颜色生成
+c
+rgb/rgba
+*/
+
+div {
+    /* c */
+    color: red;
+    /* c#f */
+    color: #ffffff;
+    /* c#f0 */
+    color: #f0f0f0;
+    /* color:rgb */
+    color:rgb(#ff0000, #00ff00, #0000ff);
+    /* color:rgba */
+    color:rgba(#ff0000, #00ff00, #0000ff, 0.1)
+}
+
+/* CSS常用写法
+pore
+posa
+d:n
+ov:h
+ */
+span {
+    /* pore */
+    position: relative;
+    /* posa */
+    position: absolute;
+    /* d:n */
+    display: none;
+    /* d:b */
+    display: block;
+    /* d:i */
+    display: inline;
+    /* ov:h 不滚动 */
+    overflow: hidden;
+    /* ov:s 滚动*/
+    overflow: scroll;
+    /* cur:ha */
+    cursor: hand;
+    /* ta:c */
+    text-align: center;
+    /* fw:b */
+    font-weight: bold;
+    /* fz10 */
+    font-size: 10px;
+    /* fz1p */
+    font-size: 1%;
+    /* fz1! */
+    font-size: 1px !important;
+}
