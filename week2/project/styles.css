@@ -9,7 +9,7 @@ div {
 
 div.out-box {
     padding: 5px 10px;
-    width: 610px;
+    width: 310px;
     border-style: groove; 
     margin: 0 auto;
     box-shadow: 10px 5px 5px rgba(131, 131, 158, 0.5);
@@ -17,12 +17,12 @@ div.out-box {
 
 
 div.content {
-   width: 600px;
+   width: 300px;
    padding: 5px 0;
 }
 img {
-    height: 400px;
-    width: 600px;
+    /* height: 200px; */
+    width: 300px;
     border-radius: 5px;
 }
 
