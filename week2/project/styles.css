@@ -7,7 +7,7 @@ div {
     border-color: rgba(248, 245, 245, 0.6);
 }
 
-div.out-box {
+.out-box {
     padding: 5px 10px;
     width: 310px;
     border-style: groove; 
@@ -16,7 +16,7 @@ div.out-box {
 }
 
 
-div.content {
+.content {
    width: 300px;
    padding: 5px 0;
 }
@@ -26,18 +26,18 @@ img {
     border-radius: 5px;
 }
 
-div.text-content {
+.text-content {
     padding: 5px 10px;
     border-style: groove; 
     margin: 10px auto;
     text-align: left;
 }
 
-p.ptitle {
+.ptitle {
     font-style: italic;
 }
 
-span {
+.li-title {
     font-weight: bold;
 }
 
