@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>最小和最大宽度媒体查询</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        h1 {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-size: 6em;
+            font-family: Roboto;
+            transition: all 0.5s;
+        }
+
+        body {
+            background-color: blue;
+        }
+
+        @media screen and (max-width: 700px) {
+            body {
+                background-color: red;
+            }
+
+        }
+
+        @media screen and (min-width: 701px) and (max-width: 999px) {
+            body {
+                background-color: green;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>媒体查询</h1>
+        <p>观察背景颜色的变化！</p>
+    </div>
+</body>
+
+</html>

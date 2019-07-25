@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 50px auto;
+            width: 500px;
+            height: 100px;
+            border: solid #6AC5AC 3px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        visible
+默认值。内容不会被修剪，可以呈现在元素框之外。
+hidden
+如果需要，内容将被剪裁以适合填充框。 不提供滚动条。
+scroll
+如果需要，内容将被剪裁以适合填充框。 浏览器显示滚动条，无论是否实际剪切了任何内容。 （这可以防止滚动条在内容更改时出现或消失。）打印机仍可能打印溢出的内容。
+auto
+取决于用户代理。 如果内容适合填充框内部，则它看起来与可见内容相同，但仍会建立新的块格式化上下文。 如果内容溢出，桌面浏览器会提供滚动条。
+overlay  
+行为与auto相同，但滚动条绘制在内容之上而不是占用空间。 仅在基于WebKit（例如，Safari）和基于Blink的（例如，Chrome或Opera）浏览器中受支持。
+    </div>
+</body>
+</html>
