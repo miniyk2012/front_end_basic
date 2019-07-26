@@ -1,0 +1,41 @@
+.content {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 500px) {
+
+    .hero,
+    .top-news,
+    .scores,
+    .weather {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
+    .hero,
+    .top-news,
+    .scores {
+        width: 33.33333%;
+    }
+
+    .weather {
+        width: 33.33333%;
+    }
+
+    .recent-news {
+        width: 66.66666%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    body {
+        width: 90%;
+        margin: auto;
+    }
+}

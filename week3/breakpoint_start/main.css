@@ -168,7 +168,7 @@ main {
  */
 
 .top-news {
-  height: 300px;
+  height: 100%;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
 }
@@ -213,6 +213,7 @@ main {
  */
 
 .scores {
+  width: 100%;
   padding-top: 1em;
 }
 
@@ -260,6 +261,7 @@ main {
  */
 
 .weather {
+  width: 100%;
   padding: 1em;
 }
 
@@ -278,6 +280,7 @@ main {
   width: 60%;
   vertical-align: middle;
 }
+
 
 .weather__today__image {
   vertical-align: middle
@@ -314,6 +317,7 @@ main {
  */
 
 .recent-news {
+  width: 100%;
   clear: both;
   padding: 1em;
 }
