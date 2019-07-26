@@ -17,25 +17,30 @@
 
 @media screen and (min-width: 900px) {
 
-    .hero,
+    .weather,
     .top-news,
     .scores {
         width: 33.33333%;
+        order: 2;
     }
 
-    .weather {
-        width: 33.33333%;
+    .hero {
+        order: 0;
+        width: 66.66666%;
     }
 
     .recent-news {
-        width: 66.66666%;
+        width: 33.33333%;
+        order: 1;
+        overflow-y:auto;
+        max-height: 300px;
     }
 }
 
 @media screen and (min-width: 1000px) {
 
-    body {
-        width: 90%;
+    main {
+        width: 1000px;
         margin: auto;
     }
 }
