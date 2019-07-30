@@ -194,7 +194,7 @@
 
       menu.addEventListener('click', function(e) {
         drawer.classList.toggle('open');
-        e.stopPropagation();
+        e.stopPropagation();  // 默认冒泡事件流，这里stop后，就不再把点击事件传递到上一层，否则main会把open再删掉
       });
       main.addEventListener('click', function() {
         drawer.classList.remove('open');

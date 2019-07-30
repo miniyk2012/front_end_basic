@@ -1,7 +1,50 @@
+.header__menu {
+    display: none;
+}
+
 .content {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 499px) {
+    .header__menu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 1em;
+    }
+
+    .header__menu svg {
+        width: 32px;
+        fill: rgb(189, 151, 151);
+    }
+
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+
+    .nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+
 }
 
 @media screen and (min-width: 500px) {
@@ -12,6 +55,8 @@
     .weather {
         width: 50%;
     }
+
+
 
 }
 
@@ -32,7 +77,7 @@
     .recent-news {
         width: 33.33333%;
         order: 1;
-        overflow-y:auto;
+        overflow-y: auto;
         max-height: 300px;
     }
 }
