@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -12,20 +11,15 @@ body {
   color: #424242;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
+h1, h2, h3, h4, h5 {
+  margin: 0; 
 }
 
-header,
-nav,
-footer,
-section,
-article,
-div {
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+* {
   box-sizing: border-box;
 }
 
@@ -77,8 +71,8 @@ ul {
 
 .header__title {
   font-weight: 300;
-  font-size: 4em;
-  margin: 0.5em 0.25em;
+  font-size: 3em;
+  margin: 0.75em 0.25em;
   display: inline-block;
   color: #212121;
 }
@@ -155,7 +149,7 @@ main {
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
-  height: 300px;
+  min-height: 300px;
 }
 
 .hero article {
@@ -164,7 +158,6 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
-  height: 40%;
   width: 100%;
   color: #fff;
   padding: 1em;
@@ -176,14 +169,11 @@ main {
  * Top News
  *
  */
-.vds-flex,.vds-flex--align-center,.vds-flex--full,.vds-flex--justify-between,.vds-flex--spacing-2x {
-  columns: 1;
-}
 
 .top-news {
-  height: 100%;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
+  width: 100%;
 }
 
 .news__title {
@@ -226,25 +216,32 @@ main {
  */
 
 .scores {
-  width: 100%;
   padding-top: 1em;
+  flex-grow: 1;
 }
 
 .scores__table {
-  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
 }
 
 .scores__table th,
 .scores__table td {
-  padding: 1em;
+  padding: 1em; 
 }
 
 .scores__table th {
   color: #fff;
   font-weight: 300;
   background-color: #78909C;
+}
+
+.scores__table tr:nth-child(1) th:nth-child(3) {
+  text-align: right;
+}
+
+.scores__table tr:nth-child(1) th:nth-child(5) {
+  text-align: left;
 }
 
 .scores__table tr:nth-child(odd) td {
@@ -263,8 +260,8 @@ main {
   text-align: right;
 }
 
-.scores__table td:nth-child(2),
-.scores__table td:nth-child(5) {
+.scores__table td:nth-child(1),
+.scores__table td:nth-child(2) {
   text-align: center;
 }
 
@@ -275,7 +272,7 @@ main {
  */
 
 .weather {
-  width: 100%;
+  flex-grow: 1;
   padding: 1em;
 }
 
@@ -285,7 +282,7 @@ main {
   font-size: 1.5em;
 }
 
-.weather__desc {
+.weather__ {
   display: block;
   font-size: 1.2em;
 }
@@ -294,7 +291,6 @@ main {
   width: 60%;
   vertical-align: middle;
 }
-
 
 .weather__today__image {
   vertical-align: middle
@@ -331,7 +327,7 @@ main {
  */
 
 .recent-news {
-  width: 100%;
+  flex-grow: 1;
   clear: both;
   padding: 1em;
 }

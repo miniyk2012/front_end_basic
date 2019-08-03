@@ -56,7 +56,9 @@
         width: 50%;
     }
 
-
+    body {
+        font-size: 1em;
+    }
 
 }
 
