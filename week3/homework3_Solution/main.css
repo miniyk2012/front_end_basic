@@ -249,7 +249,7 @@ main {
 }
 
 .scores__table tr:nth-child(even) td {
-  background-color: #eceff1;
+  background-color: #f1ecee;
 }
 
 .scores__table td.winner {

@@ -239,6 +239,7 @@ main {
 .scores__table th,
 .scores__table td {
   padding: 1em;
+  text-overflow: ellipsis;
 }
 
 .scores__table th {
