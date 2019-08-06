@@ -1,18 +1,15 @@
 <!DOCTYPE html>
+<!--
+
+This is the HTML document that you'll use jQuery to modify. To take the quiz, click over to app.js!
+
+-->
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <style>
-        .featured {
-            background: blue;
-        }
-    </style>
+    <meta charset="UTF-8">
 </head>
 
 <body>
@@ -80,40 +77,14 @@
             </ul>
         </div>
     </div>
+
 </body>
 <script>
-    var articleItems;
-
-    articleItems = $('.article-item');
-    console.log(articleItems);
-
-    var nav;
-    nav = $('#nav');
-    console.log(nav);
-
-    var articleList, h1, kids, parents;
-
-    articleList = $('.article-list');
-    h1 = articleList.siblings('h1');
-
-    kids = articleList.find('*');
-
-    parents = articleList.parents('div');
-
-    // don't change this variable!
-
-    // your code goes here!
-
-    var article2, article3;
-    article2 = $('.featured');
-    article2.click(function () {
-            $(this).toggleClass('featured');
-        }
-    );
-    article3 = article2.next();
-
-    article3.toggleClass('featured');
-    $('.nav-list a:first').attr('href', '#1');
+    $('#input').change(function () {
+        var val;
+        val = $(this).val();
+        $(this).siblings('h1').text(val);
+    });
 </script>
 
 </html>
