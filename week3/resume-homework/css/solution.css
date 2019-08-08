@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.picture,
+.resume {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.main {
+    width: 90%;
+    padding: 0 10%;
+}
+
+@media (min-width: 480px) and (max-width: 1100px) {
+    .sidebar,
+    .main {
+        width: 100%;
+    }
+
+    .main {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .picture {
+        width: 0;
+        flex-grow: 0;
+    }
+
+    .resume {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .sidebar, 
+    .main {
+        width: 100%;
+    }
+
+    .main {
+        padding: 0;
+    }
+}
