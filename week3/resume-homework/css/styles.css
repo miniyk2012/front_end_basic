@@ -1,30 +1,43 @@
 html {
-    box-sizing: border-box
+  box-sizing: border-box
 }
+
 *,
 *::after,
 *::before {
-    box-sizing: inherit
+  box-sizing: inherit
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
 }
+
 p {
   margin: 0 0 1em;
 }
+
 .container {
   width: 1920px;
   margin: 0 auto;
 }
-.picture, .resume {
+
+.picture,
+.resume {
   position: fixed;
   width: 960px;
   padding: 3.125rem;
 }
+
 .picture {
   top: 0;
   left: 0;
 }
+
 .intro {
   width: 75%;
   margin: 55% auto 0;
@@ -35,6 +48,7 @@ p {
   color: #fff;
   text-align: center;
 }
+
 .background {
   position: absolute;
   top: 0;
@@ -47,12 +61,14 @@ p {
   background-position: center top;
   filter: brightness(90%);
 }
+
 .intro em {
   color: #3ee6bf;
   font-style: normal;
   position: relative;
   font-weight: 700;
 }
+
 .resume {
   top: 0;
   right: 0;
@@ -64,28 +80,94 @@ p {
   line-height: 1.818;
   overflow-y: scroll;
 }
+
 .part {
   width: 100%;
   margin-top: 3em;
   clear: both;
   overflow: hidden;
 }
+
 .part:first-child {
   margin-top: 0;
 }
-.sidebar, .main {
+
+.sidebar,
+.main {
   float: left;
 }
+
 .sidebar {
   width: 10%;
 }
+
 .main {
   width: 90%;
   padding-right: 25%;
 }
+
 .tag {
   text-transform: uppercase;
   font-style: italic;
   font-weight: 600;
   color: rgb(43, 93, 240);
+}
+
+
+
+/* 增加断点 */
+.main {
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 500px) {
+  .picture {
+    display: none;
+  }
+
+  .resume {
+    width: 100%;
+  }
+
+  .sidebar,
+  .main {
+    float: none;
+  }
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+
+  .resume,
+  .picture {
+    width: 50%;
+  }
+
+  .sidebar,
+  .main {
+    float: none;
+  }
+
+}
+
+@media screen and (min-width: 801px) {
+
+  .resume,
+  .picture {
+    width: 50%;
+  }
+  .part {
+    box-sizing: border-box;
+  }
+
+  .sidebar {
+    width: 30%;
+    padding-right: 5%;
+  }
+
+  .main {
+    width: 70%;
+    padding-right: 15%;
+  }
+
 }
