@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+}
+
+.resume,
+.picture {
+    width: 50%;
+}
+
+.main,
+.sidebar {
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .picture {
+        width: 0%;
+    }
+
+    .resume {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .main {
+        width: 75%;
+    }
+
+    .sidebar {
+        width: 25%;
+
+    }
+
+}
