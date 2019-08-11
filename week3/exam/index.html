@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
@@ -26,47 +26,51 @@
 
 <body>
     <div class="container">
-        <div class="row cat-header">
-            <div class="col-md-6 col-xs-12">
+        <header class="row cat-header">
+            <figure class="col-md-6 col-xs-12">
                 <img class="img-responsive" src="http://placekitten.com/100/100" alt="Udacity">
-            </div>
+            </figure>
             <div class="col-md-6 col-xs-12 text-right text-uppercase">
-                <p class="cat-head-title">jane doette</p>
-                <p class="cat-head-auther">front-end ninja</p>
+                <h1 class="cat-head-title">jane doette</h1>
+                <h4 class="cat-head-author">front-end ninja</h4>
             </div>
-        </div>
-        <div class="row cat-main-pic">
-            <div class="col-md-12">
-                <img class="img-responsive" src="http://placekitten.com/1140/350" alt="html">
-            </div>
-        </div>
+        </header>
 
-        <div class="row cat-main-title">
-            <div class="col-md-12">
-                <h2>Featured Work</h2>
-            </div>
-        </div>
+        <article>
+            <section class="row cat-main-pic">
+                <figure class="col-md-12">
+                    <img class="img-responsive" src="http://placekitten.com/1140/350" alt="html">
+                </figure>
+            </section>
 
-        <div class="row text-center">
+            <section class="row cat-main-title">
+                <div class="col-md-12">
+                    <h2>Featured Work</h2>
+                </div>
+            </section>
+        </article>
+
+        <footer class="row text-center">
             <div class="cat-bottom col-md-4 col-sm-6 col-xs-12">
                 <img class="img-responsive" src="http://placekitten.com/400/350" alt="appify" data-toggle="modal"
                     data-target="#myModal">
                 <h2 class="text-uppercase">appify</h2>
-                <a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
+                <a href="https://github.com/udacity/Appify/" target="_blank">https://github.com/udacity/Appify/</a>
             </div>
             <div class="cat-bottom col-md-4 col-sm-6 col-xs-12">
                 <img class="img-responsive" src="http://placekitten.com/400/350" alt="sunflower" data-toggle="modal"
                     data-target="#myModal">
                 <h2 class="text-uppercase">sunflower</h2>
-                <a href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
+                <a href="https://github.com/udacity/Sunflower/"
+                    target="_blank">https://github.com/udacity/Sunflower/</a>
             </div>
             <div class="cat-bottom col-md-4 col-sm-6 col-xs-12">
                 <img class="img-responsive" src="http://placekitten.com/400/350" alt="bokeh" data-toggle="modal"
                     data-target="#myModal">
                 <h2 class="text-uppercase">sunflower</h2>
-                <a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
+                <a href="https://github.com/udacity/Bokeh/" target="_blank">https://github.com/udacity/Bokeh/</a>
             </div>
-        </div>
+        </footer>
     </div>
 
     <!-- Modal -->
@@ -76,11 +80,12 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">看地面的猫</h4>
+                    <h4 class="modal-title" id="myModalLabel">目瞪口呆的猫</h4>
                 </div><!--  -->
-                <div class="modal-body">
-                            <img class="img-responsive center-block" src="http://placekitten.com/500/500" alt="cat">
-                </div>
+                <figure class="modal-body text-center">
+                    <figcaption>猫咪</figcaption>
+                    <img class="img-responsive center-block" src="http://placekitten.com/500/500" alt="cat">
+                </figure>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
