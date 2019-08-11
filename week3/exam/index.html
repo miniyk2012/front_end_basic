@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row cat-header">
+            <div class="col-md-6 col-xs-12">
+                <img class="img-responsive" src="http://placekitten.com/100/100" alt="Udacity">
+            </div>
+            <div class="col-md-6 col-xs-12 text-right text-uppercase">
+                <p class="cat-head-title">jane doette</p>
+                <p class="cat-head-auther">front-end ninja</p>
+            </div>
+        </div>
+        <div class="row cat-main-pic">
+            <div class="col-md-12">
+                <img class="img-responsive" src="http://placekitten.com/1140/350" alt="html">
+            </div>
+        </div>
+
+        <div class="row cat-main-title">
+            <div class="col-md-12">
+                <h2>Featured Work</h2>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="cat-bottom col-md-4 col-sm-6 col-xs-12">
+                <img class="img-responsive" src="http://placekitten.com/400/350" alt="appify" data-toggle="modal"
+                    data-target="#myModal">
+                <h2 class="text-uppercase">appify</h2>
+                <a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
+            </div>
+            <div class="cat-bottom col-md-4 col-sm-6 col-xs-12">
+                <img class="img-responsive" src="http://placekitten.com/400/350" alt="sunflower" data-toggle="modal"
+                    data-target="#myModal">
+                <h2 class="text-uppercase">sunflower</h2>
+                <a href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
+            </div>
+            <div class="cat-bottom col-md-4 col-sm-6 col-xs-12">
+                <img class="img-responsive" src="http://placekitten.com/400/350" alt="bokeh" data-toggle="modal"
+                    data-target="#myModal">
+                <h2 class="text-uppercase">sunflower</h2>
+                <a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">看地面的猫</h4>
+                </div><!--  -->
+                <div class="modal-body">
+                            <img class="img-responsive center-block" src="http://placekitten.com/500/500" alt="cat">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
