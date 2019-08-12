@@ -1,8 +1,8 @@
 img {
     border-radius: 5px;
-    -webkit-box-shadow: 7px 6px 10px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 6px 10px 1px rgba(0,0,0,0.75);
-    box-shadow: 7px 6px 10px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 6px 10px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 6px 10px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 6px 10px 1px rgba(0, 0, 0, 0.75);
 }
 
 /* Header */
@@ -21,10 +21,12 @@ img {
 .cat-head-author {
     font-weight: bolder;
 }
+
 /* Main */
 .cat-main-pic {
     margin-bottom: 20px;
 }
+
 .cat-main-title {
     color: #7d97ad;
 }
