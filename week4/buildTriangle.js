@@ -8,7 +8,7 @@ function makeLine(length) {
 
 function buildTriangle(row) {
     let result = '';
-    for (let n=1; n<=row; n++) {
+    for (let n = 1; n <= row; n++) {
         result += makeLine(n);
     }
     return result;
