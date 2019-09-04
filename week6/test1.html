@@ -1,4 +1,5 @@
 <html>
+
 <body>
 
     <div id="parent-id">
@@ -6,6 +7,18 @@
         <p class="test">hello world 2</p>
         <p>hello world 3</p>
         <p>hello world 4</p>
+    </div>
+    <div id="parent-id2">
+        <p>wakao world 1</p>
+        <p class="test2">wakao world 2</p>
+        <div>
+            <p>wakao world 3
+            </p>
+            <div>
+                <p class="inner">inner wakao world5</p>
+            </div>
+        </div>
+        <p>wakao world 4</p>
     </div>
 
     <script>
@@ -16,6 +29,17 @@
 
         var testTarget = parentDOM.getElementsByClassName("test")[0]; // 我们想要取到的第一个元素
         console.log(testTarget); //<p class="test">hello world 2</p>
+
+        let parent1 = document.querySelector('#parent-id');
+        console.log(parent1);
+
+        let parent2 = document.querySelectorAll('#parent-id2 p'); // 包含所有子元素
+        let parent3 = document.querySelectorAll('#parent-id2>p'); // 只包含直接子元素
+        const allHeaders = document.querySelectorAll('div');
+        for (let i = 0; i < allHeaders.length; i++) {
+            console.dir(allHeaders[i]);  // 可以显示一个对象所有的属性和方法
+        }
     </script>
 </body>
+
 </html>
