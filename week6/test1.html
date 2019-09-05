@@ -19,8 +19,14 @@
             </div>
         </div>
         <p>wakao world 4</p>
+        <h1 id="test">Ice Cream Flavors</h1>
     </div>
-
+    <div id="main-heading">
+            main-heading
+    </div>
+    <div id="other-heading">
+            other-heading
+    </div>
     <script>
         var parentDOM = document.getElementById("parent-id");
 
@@ -37,8 +43,19 @@
         let parent3 = document.querySelectorAll('#parent-id2>p'); // 只包含直接子元素
         const allHeaders = document.querySelectorAll('div');
         for (let i = 0; i < allHeaders.length; i++) {
-            console.dir(allHeaders[i]);  // 可以显示一个对象所有的属性和方法
+            console.dir(allHeaders[i]); // 可以显示一个对象所有的属性和方法
         }
+        const myElement = document.querySelector('#test');
+        myElement.textContent = 'The <strong>Greatest</strong> Ice Cream Flavors';
+
+        const mainHeading = document.querySelector('#main-heading');
+        const otherHeading = document.querySelector('#other-heading');
+        const excitedText = document.createElement('span');
+        // 方法 .appendChild() 会将元素从其当前位置移动到新的位置。
+        // 因此只有otherHeading有三个感叹号。
+        excitedText.textContent = '!!!';
+        mainHeading.appendChild(excitedText);
+        otherHeading.appendChild(excitedText);
     </script>
 </body>
 
