@@ -56,6 +56,9 @@
         excitedText.textContent = '!!!';
         mainHeading.appendChild(excitedText);
         otherHeading.appendChild(excitedText);
+
+        const htmlTextToAdd = '<h2>Skydiving is fun!</h2>';
+        mainHeading.insertAdjacentHTML('beforebegin', htmlTextToAdd);
     </script>
 </body>
 
