@@ -9,6 +9,7 @@
         <p>hello world 4</p>
     </div>
     <div id="parent-id2">
+        lala
         <p>wakao world 1</p>
         <p class="test2">wakao world 2</p>
         <div>
@@ -22,10 +23,13 @@
         <h1 id="test">Ice Cream Flavors</h1>
     </div>
     <div id="main-heading">
-            main-heading
+        main-heading
     </div>
     <div id="other-heading">
-            other-heading
+        other-heading
+        <p id="quizzing-quizzes" style="color: orange;">Howdy</p>
+        <h1 id='niuh1'>我是H1</h1>
+        <h1>我是H1的兄弟</h1>
     </div>
     <script>
         var parentDOM = document.getElementById("parent-id");
@@ -59,6 +63,10 @@
 
         const htmlTextToAdd = '<h2>Skydiving is fun!</h2>';
         mainHeading.insertAdjacentHTML('beforebegin', htmlTextToAdd);
+        document.querySelector('#quizzing-quizzes').style.cssText = 'width: 30px; text-decoration: underline';
+        const mainHeading2 = document.querySelector('h1#niuh1');
+        mainHeading2.nextElementSibling.setAttribute('id', 'niuh1-sibling');
+        document.querySelector('#niuh1-sibling').style.backgroundColor = 'red';
     </script>
 </body>
 

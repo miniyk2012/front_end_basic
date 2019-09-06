@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="main-heading" class="ank-student jpk-modal">Learn Web Development at Udacity</h1>
+</body>
+<script>
+    const mainHeading = document.querySelector('#main-heading');
+
+    // 将类的列表存储在一个变量中
+    const listOfClasses = mainHeading.className;
+
+    // 打印出字符串 "ank-student jpk-modal"
+    console.log(listOfClasses);
+    const arrayOfClasses = listOfClasses.split(' ');
+    console.log(arrayOfClasses);
+</script>
+
+</html>
