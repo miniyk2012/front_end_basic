@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test10</title>
+</head>
+
+<body>
+    <article>lalal</article>
+</body>
+<script>
+
+    let article = document.querySelector('article');
+
+
+    function calTime(func) {
+        const startingTime = performance.now();
+        func();
+        const endingTime = performance.now();
+        console.log('This code took ' + (endingTime - startingTime) + ' milliseconds.');
+    }
+
+    function func1() {
+        for (let i = 1; i <= 100; i++) {
+            for (let j = 1; j <= 20; j++) {
+                const newElement = document.createElement('p');
+                newElement.textContent = 'This is paragraph number ' + i + '-' + j;
+                document.body.offsetHeight; // 获取body的真实值
+                document.body.appendChild(newElement);
+            }
+        }
+        console.log(document.body.offsetHeight);
+    }
+
+    function func2() {
+        const myDocFrag = document.createDocumentFragment();
+
+        for (let i = 1; i <= 50; i++) {
+            for (let j = 1; j <= 20; j++) {
+                const newElement = document.createElement('p');
+                newElement.innerText = 'This is paragraph number ' + i + '-' + j;
+                console.log(document.body.offsetHeight); // 获取body的真实值, 在这期间一直没变过
+                myDocFrag.appendChild(newElement);
+            }
+        }
+
+        document.body.appendChild(myDocFrag);
+        console.log(document.body.offsetHeight);
+    }
+    calTime(func1);
+    calTime(func2);
+    function logFun() {
+        console.log('lalal');
+    }
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    async function demo(ms) {
+        await sleep(ms);
+        console.log('add listener');
+        article.addEventListener('click', logFun);
+        // article.removeEventListener('click', logFun);
+
+    }
+    demo(2000);
+</script>
+
+</html>

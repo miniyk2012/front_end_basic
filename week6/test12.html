@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add 20000 p</title>
+</head>
+
+<body>
+
+    <script>
+        let count = 1
+        let total = 50000;
+        function generateParagraphs() {
+            const fragment = document.createDocumentFragment();
+
+            for (let i = 1; i <= 500; i++) {
+                const newElement = document.createElement('p');
+                newElement.textContent = 'This is paragraph number ' + count;
+                count = count + 1;
+
+                fragment.appendChild(newElement);
+                document.body.offsetHeight; // 获取body的真实值
+            }
+
+            document.body.appendChild(fragment);
+
+            if (count < total) {
+                setTimeout(generateParagraphs, 0); // 每次加500个
+            } else {
+                console.log('done');
+            }
+            
+
+        }
+
+        generateParagraphs();
+        document.addEventListener('click', function (evt) {
+            if (evt.target.nodeName === 'P')
+                console.log(evt.target.textContent);
+        });
+    </script>
+</body>
+
+</html>
