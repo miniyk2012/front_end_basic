@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input class="target" type="text" value="Field 1">
+        <select class="target">
+            <option value="option1" selected="selected">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+        <input class="target" type="text" value="Field 2">
+    </form>
+    <div id="other">
+        Trigger the handler
+    </div>
+    <script>
+        $(".target").change(function () {
+            alert("Handler for .change() called.");
+        });
+        $("#other").click(function () {
+            $(".target").change();
+        });
+    </script>
+</body>
+
+</html>

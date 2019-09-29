@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hover demo</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div><p></p></div>
+<script>
+    $( 'body' ).on( 'click', 'p>article', function() {
+        alert($(this).prop('tagName'));
+        alert($(this).text());
+    });
+    
+    $( 'p' ).append( '<article> <h1>新文章的附加文章</h1> <p>内容 </p> </article>' );
+</script>
+ 
+
+ 
+</body>
+</html>
