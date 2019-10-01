@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!--
+For the first input, add a label by using the `for` attribute.
+For the second input, add a label by nesting. Note that BOTH labels
+need `for` attributes to ensure screen reader support.
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz - Labels</title>
+</head>
+
+<body>
+    <form action="#" autocomplete="on">
+        <label for="forCheckBox">
+            <span>Same as billing address</span>
+        </label>
+        <input type="checkbox" id="forCheckBox">
+
+        <br>
+
+        <span></span>
+        <label for="forTel">
+            <span>Telephone Number</span>
+            <input type="tel" id="forTel">
+        </label>
+
+        <label for="event-name">
+            <span>Enter the name of your event:</span>
+            <input type="text" id="event-name" placeholder="Event Name" autocomplete="off">
+        </label>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

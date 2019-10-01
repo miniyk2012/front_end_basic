@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!--
+Make a useful calendar appear by using the appropriate input type.
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz - Calendar</title>
+    <style>
+        body {
+            line-height: 1.5em;
+        }
+
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Pick a date and time</h3>
+    <form action="#">
+
+        <label for="fdatetime">Time
+            <input id="fdatetime" type="datetime-local">
+        </label>
+
+        <label for="email">
+            <span>Email:</span>
+            <input type="email" id="email" placeholder="example@udacity.com" autocomplete="email">
+        </label>
+
+        <label for="inputsth">Input
+            <input type="text" autofocus id="inputsth" required>
+        </label>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

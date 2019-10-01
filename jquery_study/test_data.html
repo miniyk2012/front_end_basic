@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+<div data-another="this is test"></div>
+<script>
+    console.log($('div').data('blah'));
+    $('div').data('blah', 86);
+    console.log($('div').data('blah'));
+    $('div').data('blah', 'data');
+    console.log($('div').data('blah'));
+    $('div').removeData('blah');
+    console.log($('div').data('blah'));
+    $('div').data('test', {'first': 16, last: 'pizza!'})
+    $('div').data('blah', 'newData')
+    console.log($('div').data('blah'));
+    console.log($('div').data('test').first);
+    console.log($('div').data('test').last);
+    console.log($('div').data('another'));
+    $('div').data('another', 'wakawaka');
+    let divTag = document.querySelector('div');
+    divTag.dataset.another = 'waka';
+    divTag.dataset.yy = 'xx';
+    console.log($('div').data('another'));  // wakawaka
+    console.log($('div').data('yy'));  
+    console.log(divTag.dataset.another);  // waka
+    $('div').removeData('another');
+    console.log($('div').data('another'));  // waka
+
+</script>
+</body>
+
+</html>

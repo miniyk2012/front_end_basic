@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <input type=number value="102">
+        <input type=number min=100 max=999 step=5 required>
+        <p id="output"></p>
+        <input id="range-example" type="range" min="0" max="50" step="1">
+        <input type="submit">
+    </form>
+    <script>
+            const rangeInput = document.querySelector('input#range-example');
+
+            // grab <p id="output"></p> to display the output
+            const output = document.querySelector('p#output');
+            output.innerHTML = rangeInput.value
+            // 当范围改变时，更新显示屏
+            rangeInput.onchange = function() {
+                output.innerHTML = this.value;
+            };
+    </script>
+</body>
+
+</html>
